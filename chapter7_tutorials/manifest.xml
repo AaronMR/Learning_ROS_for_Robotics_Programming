@@ -1,13 +1,12 @@
 <package>
-  <description brief="chapter7_tutorials">
-
-     chapter7_tutorials
-
+  <description brief="Chapter 7 tutorials">
+    Chapter 7 tutorials.
+    Learning ROS for Robotics Programming
   </description>
-  <author>aaronmr</author>
-  <license>BSD</license>
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/chapter7_tutorials</url>
+  <author>Aaron Martinez, Enrique Fernández</author>
+  <license>GPL</license>
+  <review status="reviewed" notes=""/>
+  <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="roscpp"/>
   <depend package="tf" />
   <depend package="laser_geometry" />

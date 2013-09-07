@@ -1,13 +1,12 @@
 <package>
-  <description brief="chapter6_tutorials">
-
-     chapter6_tutorials
-
+  <description brief="Chapter 6 tutorials">
+    Chapter 6 tutorials.
+    Learning ROS for Robotics Programming
   </description>
-  <author>Enrique Fernández Perdomo</author>
-  <license>BSD</license>
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/chapter6_tutorials</url>
+  <author>Aaron Martinez, Enrique Fernández</author>
+  <license>GPL</license>
+  <review status="reviewed" notes=""/>
+  <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="roscpp"/>
   <depend package="driver_base"/>
   <depend package="sensor_msgs"/>

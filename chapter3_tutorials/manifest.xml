@@ -1,13 +1,12 @@
 <package>
-  <description brief="chapter3_tutorials">
-
-     chapter3_tutorials
-
+  <description brief="Chapter 3 tutorials">
+    Chapter 3 tutorials.
+    Learning ROS for Robotics Programming
   </description>
-  <author>Enrique</author>
-  <license>BSD</license>
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/chapter3_tutorials</url>
+  <author>Aaron Martinez, Enrique Fernández</author>
+  <license>GPL</license>
+  <review status="reviewed" notes=""/>
+  <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="std_msgs"/>
   <depend package="geometry_msgs"/>
   <depend package="sensor_msgs"/>

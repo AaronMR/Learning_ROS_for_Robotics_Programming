@@ -1,13 +1,11 @@
-<package>
-  <description brief="chapter4_tutorials">
-
-     chapter4_tutorials
-
+  <description brief="Chapter 4 tutorials">
+    Chapter 4 tutorials.
+    Learning ROS for Robotics Programming
   </description>
-  <author>aaronmr</author>
-  <license>BSD</license>
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/chapter4_tutorials</url>
+  <author>Aaron Martinez, Enrique Fernández</author>
+  <license>GPL</license>
+  <review status="reviewed" notes=""/>
+  <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="turtlesim"/>
   <depend package="std_msgs"/>
   <depend package="joy"/>

@@ -1,13 +1,12 @@
 <package>
-  <description brief="chapter2_tutorials">
-
-     chapter2_tutorials
-
+  <description brief="Chapter 2 tutorials">
+    Chapter 2 tutorials.
+    Learning ROS for Robotics Programming
   </description>
-  <author>aaronmr</author>
-  <license>BSD</license>
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/chapter2_tutorials</url>
+  <author>Aaron Martinez, Enrique Fernández</author>
+  <license>GPL</license>
+  <review status="reviewed" notes=""/>
+  <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="std_msgs"/>
   <depend package="rospy"/>
   <depend package="roscpp"/>

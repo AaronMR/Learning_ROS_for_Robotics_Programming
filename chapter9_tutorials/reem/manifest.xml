@@ -1,13 +1,12 @@
 <package>
-  <description brief="reem">
-
-     reem
-
+  <description brief="Chapter 9 tutorials (REEM)">
+    Chapter 9 tutorials (REEM).
+    Learning ROS for Robotics Programming
   </description>
-  <author>Enrique</author>
-  <license>BSD</license>
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/reem</url>
+  <author>Aaron Martinez, Enrique Fernández</author>
+  <license>GPL</license>
+  <review status="reviewed" notes=""/>
+  <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="roscpp"/>
 
 </package>
