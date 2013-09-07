@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="gui" default="true"/>
+
+  <include file="$(find pr2)/launch/simple_world.launch">
+    <arg name="gui" value="$(arg gui)" />
+  </include>
+
+  <!-- start pr2 robot w/o arms -->
+  <include file="$(find pr2_gazebo)/launch/pr2_no_arms.launch"/>
+</launch>
+

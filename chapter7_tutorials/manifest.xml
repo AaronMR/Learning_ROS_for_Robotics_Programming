@@ -1,0 +1,16 @@
+<package>
+  <description brief="chapter7_tutorials">
+
+     chapter7_tutorials
+
+  </description>
+  <author>aaronmr</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chapter7_tutorials</url>
+  <depend package="roscpp"/>
+  <depend package="tf" />
+  <depend package="laser_geometry" />
+</package>
+
+

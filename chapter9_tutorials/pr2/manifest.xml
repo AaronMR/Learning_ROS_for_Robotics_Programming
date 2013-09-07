@@ -1,0 +1,15 @@
+<package>
+  <description brief="pr2">
+
+     pr2
+
+  </description>
+  <author>Enrique</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/pr2</url>
+  <depend package="roscpp"/>
+
+</package>
+
+

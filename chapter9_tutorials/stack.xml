@@ -1,0 +1,13 @@
+<stack>
+  <description brief="Chapter 9 tutorials">
+
+    ROS Book. Chapter 9 tutorials.
+
+  </description>
+  <author>Maintained by Enrique Fernández and Aaron Martínez</author>
+  <license>BSD</license>  
+  <review status="Doc reviewed" notes="2013/06/22"/>
+  <url>http://ros.org</url>
+  <depend stack="pr2_simulator"/>
+
+</stack>

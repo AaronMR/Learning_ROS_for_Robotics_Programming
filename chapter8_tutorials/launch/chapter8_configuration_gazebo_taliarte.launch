@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  	<param name="/use_sim_time" value="true" />
+
+	<remap from="/base_scan/scan" to="/scan" />  
+  	<!-- start up wg world -->
+  	<include file="$(find taliarte_world)/launch/taliarte_collada_world.launch"/>
+
+  	<arg name="model" default="$(find chapter8_tutorials)/urdf/robot1_base_04.xacro"/>
+  	<param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
+
+  	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+  	<!-- start robot state publisher -->
+ 	<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" output="screen" />
+
+	<node name="spawn_robot" pkg="gazebo" type="spawn_model" args="-urdf -param robot_description -z 0.1 -model robot_model" respawn="false" output="screen" />
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find chapter8_tutorials)/launch/navigation.vcg" />
+
+</launch>
+

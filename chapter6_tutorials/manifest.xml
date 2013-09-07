@@ -1,0 +1,23 @@
+<package>
+  <description brief="chapter6_tutorials">
+
+     chapter6_tutorials
+
+  </description>
+  <author>Enrique Fernández Perdomo</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chapter6_tutorials</url>
+  <depend package="roscpp"/>
+  <depend package="driver_base"/>
+  <depend package="sensor_msgs"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
+  <depend package="image_transport"/>
+  <depend package="camera_info_manager"/>
+  <depend package="tf"/>
+  <depend package="dynamic_reconfigure"/>
+
+</package>
+
+

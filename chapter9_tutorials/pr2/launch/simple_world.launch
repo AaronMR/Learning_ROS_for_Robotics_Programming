@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- start gazebo with an simple world -->
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+
+  <node name="gazebo" pkg="gazebo" type="gazebo" args="$(find pr2)/worlds/simple.world" respawn="false" output="screen"/>
+
+  <!-- start gui -->
+  <group if="$(arg gui)">
+    <node name="gazebo_gui" pkg="gazebo" type="gui" respawn="false" output="screen"/>
+  </group>
+
+</launch>
+

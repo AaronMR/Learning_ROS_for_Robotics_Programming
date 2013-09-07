@@ -1,0 +1,26 @@
+<package>
+  <description brief="Code for some URDF Tutorials">
+    Support code for the step by step URDF tutorials on ROS.org
+  </description>
+  <author>David Lu!!</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/urdf_tutorial</url>
+  <depend package="std_msgs"/>
+  <depend package="tf"/>
+  <depend package="convex_decomposition"/>
+  <depend package="ivcon"/>
+  <depend package="urdf" />
+    <depend package="xacro" />
+    <depend package="fake_localization" />
+    <depend package="erratic_gazebo_plugins"/>
+    <depend package="map_server"/>
+    <depend package="gazebo_worlds"/>
+    <depend package="robot_state_publisher"/>
+    <depend package="laser_filters"/>
+    <depend package="robot_self_filter"/>
+    <depend package="pr2_gazebo_plugins"/>
+
+</package>
+
+

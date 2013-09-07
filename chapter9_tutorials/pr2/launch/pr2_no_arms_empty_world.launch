@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- start up empty world -->
+  <arg name="gui" default="true"/>
+  <arg name="throttled" default="false"/>
+  <arg name="paused" default="true"/>
+
+  <include file="$(find gazebo_worlds)/launch/empty_world_paused.launch">
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="throttled" value="$(arg throttled)" />
+    <arg name="paused" value="$(arg paused)" />
+  </include>
+
+  <!-- start pr2 robot w/o arms -->
+  <include file="$(find pr2_gazebo)/launch/pr2_no_arms.launch"/>
+
+</launch>
+

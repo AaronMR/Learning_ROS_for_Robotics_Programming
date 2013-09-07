@@ -1,0 +1,15 @@
+<package>
+  <description brief="reem">
+
+     reem
+
+  </description>
+  <author>Enrique</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/reem</url>
+  <depend package="roscpp"/>
+
+</package>
+
+

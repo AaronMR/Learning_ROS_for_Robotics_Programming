@@ -1,0 +1,18 @@
+<package>
+  <description brief="chapter8_tutorials">
+
+     chapter8_tutorials
+
+  </description>
+  <author>aaronmr</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chapter8_tutorials</url>
+  <depend package="move_base_msgs" />
+  <depend package="actionlib" />
+  <depend package="geometry_msgs" />
+  <depend package="tf" />
+  <depend package="roscpp" />
+</package>
+
+

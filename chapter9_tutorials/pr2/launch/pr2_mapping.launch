@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find pr2)/launch/pr2_no_arms_simple_world.launch"/>
+
+  <include file="$(find gmapping)/launch/slam_gmapping_pr2.launch"/>
+</launch>
+

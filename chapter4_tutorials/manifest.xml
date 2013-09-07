@@ -1,0 +1,18 @@
+<package>
+  <description brief="chapter4_tutorials">
+
+     chapter4_tutorials
+
+  </description>
+  <author>aaronmr</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chapter4_tutorials</url>
+  <depend package="turtlesim"/>
+  <depend package="std_msgs"/>
+  <depend package="joy"/>
+  <depend package="pcl"/>
+  <depend package="tf"/>
+</package>
+
+

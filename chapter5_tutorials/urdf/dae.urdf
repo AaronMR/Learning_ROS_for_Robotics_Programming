@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="robot1">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh scale="0.025 0.025 0.025" filename="package://chapter5_tutorials/urdf/bot.dae"/>
+      </geometry>
+      <origin xyz="0 0 0.226"/>
+    </visual>
+  </link>
+</robot>

@@ -1,0 +1,17 @@
+<package>
+  <description brief="chapter2_tutorials">
+
+     chapter2_tutorials
+
+  </description>
+  <author>aaronmr</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chapter2_tutorials</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+
+</package>
+
+
