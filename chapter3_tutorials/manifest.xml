@@ -16,7 +16,7 @@
   <depend package="opencv2"/>
   <depend package="cv_bridge"/>
   <depend package="image_transport"/>
-  <depend package="pcl"/>
+  <depend package="pcl_conversions"/>
   <depend package="pcl_ros"/>
 
 </package>
