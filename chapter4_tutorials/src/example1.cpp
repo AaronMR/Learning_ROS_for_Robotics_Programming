@@ -1,5 +1,5 @@
 #include<ros/ros.h>
-#include<turtlesim/Velocity.h>
+#include<geometry_msgs/Twist.h>
 #include<sensor_msgs/Joy.h>
 #include<iostream>
 
@@ -21,15 +21,15 @@ TeleopJoy::TeleopJoy()
 	n.param("axis_linear",i_velLinear,i_velLinear);
 	n.param("axis_angular",i_velAngular,i_velAngular);
 	
-	pub = n.advertise<turtlesim::Velocity>("turtle1/command_velocity",1);
+	pub = n.advertise<geometry_msgs::Twist>("cmd_vel",1);
 	sub = n.subscribe<sensor_msgs::Joy>("joy", 10, &TeleopJoy::callBack, this);
 }
 
 void TeleopJoy::callBack(const sensor_msgs::Joy::ConstPtr& joy)
 {
-	turtlesim::Velocity vel;
-	vel.angular = joy->axes[i_velAngular];
-	vel.linear = joy->axes[i_velLinear];
+	geometry_msgs::Twist vel;
+	vel.angular.z = joy->axes[i_velAngular];
+	vel.linear.x = joy->axes[i_velLinear];
 	pub.publish(vel);
 }
 
