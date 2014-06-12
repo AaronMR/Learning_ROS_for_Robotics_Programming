@@ -1,5 +1,5 @@
 #include<ros/ros.h>
-#include<turtlesim/Velocity.h>
+#include<geometry_msgs/Twist.h>
 #include<std_msgs/Float32.h>
 
 class TeleopImu{
@@ -12,13 +12,13 @@ class TeleopImu{
 		ros::Publisher pub;
 		ros::Subscriber velAngular_z_sub;
 		ros::Subscriber velLinear_x_sub;
-		turtlesim::Velocity vel;
+		geometry_msgs::Twist vel;
 
 };
 
 TeleopImu::TeleopImu()
 {	
-	pub = n.advertise<turtlesim::Velocity>("turtle1/command_velocity",1);
+	pub = n.advertise<geometry_msgs::Twist>("turtle1/cmd_vel",1);
 
 	velLinear_x_sub = n.subscribe<std_msgs::Float32>("/velLinear_x", 1, &TeleopImu::velLinearCallBack, this);
 	velAngular_z_sub = n.subscribe<std_msgs::Float32>("/velAngular_z", 1, &TeleopImu::velAngularCallBack, this);
@@ -26,12 +26,12 @@ TeleopImu::TeleopImu()
 
 
 void TeleopImu::velAngularCallBack(const std_msgs::Float32::ConstPtr& wz){
-        vel.linear = -1 * wz->data;
+        vel.linear.x = -1 * wz->data;
         pub.publish(vel);
 }
 
 void TeleopImu::velLinearCallBack(const std_msgs::Float32::ConstPtr& vx){
-	vel.angular =  vx->data;
+	vel.angular.z =  vx->data;
         pub.publish(vel);
 }
 
