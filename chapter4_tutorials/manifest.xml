@@ -7,7 +7,7 @@
   <license>GPL</license>
   <review status="reviewed" notes=""/>
   <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
-  <depend package="turtlesim"/>
+  <depend package="geometry_msgs"/>
   <depend package="std_msgs"/>
   <depend package="joy"/>
   <depend package="pcl"/>
