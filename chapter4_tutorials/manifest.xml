@@ -9,6 +9,7 @@
   <url>http://www.packtpub.com/learning-ros-for-robotics-programming/book</url>
   <depend package="turtlesim"/>
   <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
   <depend package="joy"/>
   <depend package="pcl"/>
   <depend package="tf"/>
