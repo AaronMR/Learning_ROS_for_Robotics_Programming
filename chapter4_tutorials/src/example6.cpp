@@ -1,5 +1,5 @@
 #include<ros/ros.h>
-#include<turtlesim/Velocity.h>
+#include<geometry_msgs/Twist.h>
 #include<sensor_msgs/Imu.h>
 #include<iostream>
 #include<tf/LinearMath/Matrix3x3.h>
@@ -19,14 +19,14 @@ class TeleopImu{
 
 TeleopImu::TeleopImu()
 {	
-	pub = n.advertise<turtlesim::Velocity>("turtle1/command_velocity",1);
+	pub = n.advertise<geometry_msgs::Twist>("turtle1/cmd_vel",1);
 	sub = n.subscribe<sensor_msgs::Imu>("imu", 10, &TeleopImu::callBack, this);
 }
 
 void TeleopImu::callBack(const sensor_msgs::Imu::ConstPtr& imu)
 {
 
-	turtlesim::Velocity vel;
+	geometry_msgs::Twist vel;
 	
 
 	tf::Quaternion bq(imu->orientation.x,imu->orientation.y,imu->orientation.z,imu->orientation.w);
@@ -34,8 +34,8 @@ void TeleopImu::callBack(const sensor_msgs::Imu::ConstPtr& imu)
    	tf::Matrix3x3(bq).getRPY(roll,pitch,yaw);
 
 	
-	vel.angular = roll;
-	vel.linear = pitch;
+	vel.angular.z = roll;
+	vel.linear.x = pitch;
 	pub.publish(vel);
 
 }
